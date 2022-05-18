@@ -246,7 +246,11 @@ class NexiaThermostat {
     return state;
   }
 
-  computeState(callback: any) {
+  
+  
+  
+  
+  (callback: any) {
     const promise = this.makeStatusRequest();
     promise()
       .then(rawData => {
@@ -381,7 +385,11 @@ class NexiaThermostat {
    */
   handleTemperatureDisplayUnitsSet(value: any, callback: (arg0: null) => void) {
     this.log.debug('Triggered SET TemperatureDisplayUnits:' + value);
-    callback(null);
+    this.currentTemperatureScale = value;
+    this.computeState((state: { scale: number; }) => { 
+      this.log.debug("scale", state);
+      callback(null, state.scale); 
+    });
   }
 
   /*
