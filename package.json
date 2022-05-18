@@ -1,7 +1,7 @@
 {
   "displayName": "Nexia & American Standard Thermostat with Zone Support",
   "name": "homebridge-nexia-as-thermostat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Homebridge Nexia and American Standard plugin with support for multiple zones",
   "main": "dist/accessory.js",
   "scripts": {
@@ -32,10 +32,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/DJFraz/homebridge_nexia_as_thermostat.git"
+    "url": "git://github.com/beefs/homebridge_nexia_as_thermostat.git"
   },
   "bugs": {
-    "url": "https://github.com/DJFraz/homebridge_nexia_as_thermostat/issues"
+    "url": "https://github.com/beefs/homebridge_nexia_as_thermostat/issues"
   },
   "devDependencies": {
     "@types/node": "10.17.19",
@@ -46,5 +46,5 @@
     "mocha": "^8.3.0",
     "rimraf": "^3.0.2"
   },
-  "homepage": "https://github.com/DJFraz/homebridge_nexia_as_thermostat#readme"
+  "homepage": "https://github.com/beefs/homebridge_nexia_as_thermostat#readme"
 }
